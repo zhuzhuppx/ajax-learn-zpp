@@ -4,7 +4,7 @@ import "./App.css";
 // import AxiosFetch from "../pages/AxiosFetch";
 // import AxiosFetchArray from "../pages/AxiosFetchArray";
 // import UserList from "../pages/UserList";
-import TableList from "../pages/TableList"
+import TableList from "../pages/demos/TableList"
 
 class App extends Component {
   render() {

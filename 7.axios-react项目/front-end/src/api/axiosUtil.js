@@ -21,12 +21,12 @@ export default function fetchData(method, url, postData, onSuccess, onError) {
     obj.data = queryString.stringify(postData);
   }
   axios(obj)
-    .then(function(response) {
+    .then(function (response) {
       if (onSuccess) {
         onSuccess(response.data);
       }
     })
-    .catch(function(error) {
+    .catch(function (error) {
       if (onError) {
         onError(error);
       }
