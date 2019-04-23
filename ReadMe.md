@@ -3,9 +3,9 @@
  都是服务器直接拼接html代码，直接返回给浏览器，浏览器直接渲染
  前端的工作：只需要根据效果图，提供静态页面即可，所有工作由后端拼接完成
  本次讲解用的是node做服务器
-  >1.npm init生成一个node项目
-  >2.用yarn add express 添加express模块
-  >3.新建一个server.js复制以下代码，服务器搭建完毕
+  > 1.npm init生成一个node项目
+  > 2.用yarn add express 添加express模块
+  > 3.新建一个server.js复制以下代码，服务器搭建完毕
 
 ```
 const express = require("express");
@@ -52,11 +52,11 @@ xhr.send('string参数：?name=ppx&age=18');
 比如请求时xhr的请求流程都是open，setRequestHeaders,onreadystatechange,send这些都是死的流程。
 
 不同的是：
->1.请求的方法
->2.请求的地址
->3.请求成功后处理的逻辑
->4.请求失败后处理的逻辑
->5.headers不同
+> 1.请求的方法
+> 2.请求的地址
+> 3.请求成功后处理的逻辑
+> 4.请求失败后处理的逻辑
+> 5.headers不同
 
 
 假如封装的方法名叫做fetchData那么封装的util应该是
@@ -67,8 +67,8 @@ function fetchData(string:'get||post',string:url,function:onSuccess,function:onE
 ```
 ### 4.Jquery-ajax
 步骤：
->1.引入JQUERY
->2.使用$.ajax({})调用
+> 1.引入JQUERY
+> 2.使用$.ajax({})调用
 
 ...
 
@@ -97,8 +97,8 @@ https://www.npmjs.com/package/axios
 
 ### 7.axios-react项目
 项目前后端分离架构
->1.front-end项目：前端项目，使用的是react的create-react-app脚手架直接生成的。
->2.node-server项目：后端项目，提供接口与数据保证页面数据接口正常。
+> 1.front-end项目：前端项目，使用的是react的create-react-app脚手架直接生成的。
+> 2.node-server项目：后端项目，提供接口与数据保证页面数据接口正常。
 
 ###### 1.实现一个后端返回一个字符串，渲染到react的组件上
 步骤：
